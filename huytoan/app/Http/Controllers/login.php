@@ -50,5 +50,12 @@ class login extends Controller
         return redirect('product');
     }
 
+    public function getserch(Request $req){
+        $products = gallerylaravel::where('name','like','%'.$req->key.'%')
+            ->orWhere('id',$req->key)
+            ->get();
+        return view('timkiem',compact('products'));
+    }
+
 
 }

@@ -39,7 +39,10 @@ Route::get('edit/{id}', [
 
 Route::PATCH('update/{id}', 'login@sua_du_lieu');
 
-
+Route::get('serch', [
+    'as' => 'serch',
+    'uses' => 'login@getserch'
+]);
 
 
 

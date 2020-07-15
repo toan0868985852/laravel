@@ -1,0 +1,28 @@
+.tim_kiem{
+    margin-top: -40px;
+    margin-bottom: 40px;
+    width:250px;
+    height: 30px;
+    margin-left: 40%;
+}
+.tim_kiem input{
+    width: 100%;
+    height: 30px;
+}
+.tim_kiem button{
+    margin-left: 253px;
+    height: 30px;
+    position: relative;
+    top: -72px;
+}
+button{
+    width: 70px;
+    margin: 40px 10px 10px 0;
+}
+.edit{
+    position: relative;
+    top:-28px;
+    left: 90px;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -13,11 +13,12 @@
 <body>
 <main>
     <div class="tim_kiem">
-        <form action="{{route('serch')}}" method="get">
-            <h1>tìm kiếm ảnh theo tên</h1>
+        <form action="" method="get">
+            <h1>tìm kiếm ảnh</h1>
             <input type="text" name="key" placeholder="Find Product">
             <button>tìm kiếm</button>
         </form>
+        <p>tìm thấy {{count($products)}} ảnh</p>
     </div>
     <section class="cases-links">
         <div class="wrapper">
@@ -40,8 +41,8 @@
                             <a class="edit" href="/huytoan/public/edit/{{$p->id}}">Edit</a>
                         </a>
                     </div>
-            @endforeach
-        </div>
+                @endforeach
+            </div>
         </div>
     </section>
 
@@ -83,3 +84,4 @@
 </div>
 </body>
 </html>
+
